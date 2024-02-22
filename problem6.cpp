@@ -1,7 +1,7 @@
 
                                                                    ///* code by Ahmed Elnemr *///
 
-
+///link of problem : https://codeforces.com/contest/1932/problem/A
 
 #include<bits/stdc++.h>
 #include<iostream>
