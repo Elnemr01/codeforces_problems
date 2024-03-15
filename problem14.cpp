@@ -1,4 +1,4 @@
-    ///link of problem : https://codeforces.com/contest/1920/problem/A
+    ///link of problem :
 
 #include<bits/stdc++.h>
 #include<iostream>                     ///* code by Ahmed Elnemr *///
@@ -9,9 +9,9 @@ using namespace std;
 #define  ll  long long
 #define f first
 #define sec second
-//#define endl "\n"
+#define endl "\n"
 #define lp(n) for(ll i=0;i<n;i++)
-#define seet set<int>
+#define stt set<int>
 #define vec vector<int>
 
 void fast_run()
@@ -22,47 +22,35 @@ void fast_run()
 }
 
 
-
 signed main() {
     fast_run();
     int t=1;
     cin>>t;
     while(t--) {
-        int n,x=-1,z,y=1e9+1,a,ans=0;  cin>>n;
-        vec v;
+        int n,ans=0; cin>>n;
+        string s="AA";
 
-        while(n--) {
-            cin>>a>>z;
-            if(a==1) {
-                x=max(x,z);
-            }
-            else if (a==2) {
-                y=min(y,z);
-            }
-            else {
-                v.push_back(z);
-            }
-        }
-
-        if(x>y) {
-            cout<<ans<<endl;
+        if(n%2!=0) {
+            cout<<"NO\n";
             continue;
         }
-        ans=y-x+1;
-        lp(v.size()) {
-            if(v[i]>=x && v[i]<=y) {
-                ans--;
-            }
-        }
-        cout<<ans<<endl;
 
+         if(n==2) {
+            cout<<"YES\n"<<s<<endl;
+            continue;
+        }
+
+        n-=2;
+
+        for(char i='B' ; i<='Z' && n ;i++) {
+            s+=i; s+=i;
+            n-=2;
+        }
+
+        cout<<"YES\n"<<s<<endl;
 
     }
 
-
-
-
-
     return 0;
-}
 
+}
