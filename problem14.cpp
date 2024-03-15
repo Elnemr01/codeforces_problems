@@ -1,4 +1,4 @@
-    ///link of problem :
+    ///link of problem : https://codeforces.com/contest/1948/problem/A
 
 #include<bits/stdc++.h>
 #include<iostream>                     ///* code by Ahmed Elnemr *///
