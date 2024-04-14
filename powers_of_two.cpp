@@ -37,8 +37,6 @@ string to_binary (ll n) {
 
 }
 
-
-
 signed main() {
     fast_run();
 
@@ -77,8 +75,6 @@ signed main() {
        }
 
        cout<<endl;
-
-
 
     }
 
