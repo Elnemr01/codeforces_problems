@@ -7,6 +7,7 @@ using namespace std;
 ///#define b 10   --> const int b= 10;
 
 #define  ll  long long
+#define  int  long long
 #define f first
 #define sec second
 #define endl "\n"
